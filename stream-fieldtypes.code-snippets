@@ -119,6 +119,7 @@
 		"description": "anomaly.field_type.wysiwyg"
 	},
 	"anomaly.field_type.text": {
+		"scope": "php",
 		"prefix": [
 			"ftText",
 			"ft"
@@ -143,6 +144,7 @@
 		"description": "anomaly.field_type.text"
 	},
 	"anomaly.field_type.textarea": {
+		"scope": "php",
 		"prefix": [
 			"ftTextarea",
 			"ft"
@@ -169,6 +171,7 @@
 		"description": "anomaly.field_type.textarea"
 	},
 	"anomaly.field_type.multiple": {
+		"scope": "php",
 		"prefix": [
 			"ftMultiple",
 			"ft"
