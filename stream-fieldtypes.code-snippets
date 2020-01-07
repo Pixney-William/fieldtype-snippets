@@ -1,0 +1,200 @@
+{
+	"anomaly.field_type": {
+		"scope": "php",
+		"prefix": [
+			"ft",
+			"ftDefault"
+		],
+		"body": [
+			"\"anomaly.field_type.${1:default}\" => [",
+			"    \"type\"            => \"anomaly.field_type.${1:default}\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
+			"    \"config\"          => [",
+			"        ",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type"
+	},
+	"anomaly.field_type.image": {
+		"scope": "php",
+		"prefix": [
+			"ft",
+			"ftImage"
+		],
+		"body": [
+			"'image' => [",
+			"    'type'                    => '${1:anomaly.field_type.image}',",
+			"    'warning'                 => '${2}',",
+			"    'name'                    => '${3}',",
+			"    'placeholder'             => '${4}',",
+			"    'instructions'            => '${5}',",
+			"    'locked'                  => ${6:false},",
+			"    'config'                  => [",
+			"        'folders'       => ['${7:images}'],",
+			"        'aspect_ratio'  => '${8:1:1}',",
+			"        'min_height'    => ${9:300},",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type.image"
+	},
+	"anomaly.field_type.boolean": {
+		"scope": "php",
+		"prefix": [
+			"ftBoolean",
+			"ft"
+		],
+		"body": [
+			"\"anomaly.field_type.boolean\" => [",
+			"    \"type\"                => \"anomaly.field_type.boolean\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
+			"    \"config\"          => [",
+			"        \"default_value\" => false,",
+			"        \"on_color\"      => \"success\",",
+			"        \"off_color\"     => \"danger\",",
+			"        \"on_text\"       => \"YES\",",
+			"        \"off_text\"      => \"NO\",",
+			"        \"mode\"          => \"checkbox\",",
+			"        \"label\"         => null,",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type.boolean"
+	},
+	"anomaly.field_type.email": {
+		"scope": "php",
+		"prefix": [
+			"ftEmail",
+			"ft"
+		],
+		"body": [
+			"\"anomaly.field_type.email\" => [",
+			"    \"type\"            => \"anomaly.field_type.email\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
+			"    \"config\"          => [",
+			"        \"default_value\" => \"${1:william@pixney.com}\",",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type.email"
+	},
+	"anomaly.field_type.wysiwyg": {
+		"scope": "php",
+		"prefix": [
+			"ftWysiwyg",
+			"ft"
+		],
+		"body": [
+			"\"anomaly.field_type.wysiwyg\" => [",
+			"    \"type\"            => \"anomaly.field_type.wysiwyg\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
+			"    \"config\"          => [",
+			"        \"default_value\" => null,",
+			"        \"configuration\" => \"default\",",
+			"        \"line_breaks\"   => false,",
+			"        \"sync\"          => true,",
+			"        \"height\"        => 500,",
+			"        \"buttons\"       => [],",
+			"        \"plugins\"       => [],",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type.wysiwyg"
+	},
+	"anomaly.field_type.text": {
+		"prefix": [
+			"ftText",
+			"ft"
+		],
+		"body": [
+			"\"anomaly.field_type.text\" => [",
+			"    \"type\"            => \"anomaly.field_type.text\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
+			"    \"config\"          => [",
+			"        \"type\"          => \"text\",",
+			"        \"mask\"          => null,",
+			"        \"min\"           => null,",
+			"        \"max\"           => null,",
+			"        \"default_value\" => null,",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type.text"
+	},
+	"anomaly.field_type.textarea": {
+		"prefix": [
+			"ftTextarea",
+			"ft"
+		],
+		"body": [
+			"\"anomaly.field_type.textarea\" => [",
+			"    \"type\"            => \"anomaly.field_type.textarea\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
+			"    \"config\"          => [",
+			"        \"rows\"          => 6,",
+			"        \"min\"           => null,",
+			"        \"max\"           => null,",
+			"        \"show_counter\"  => false,",
+			"        \"default_value\" => null,",
+			"        \"show_counter\"  => true,",
+			"        \"autogrow\"      => true,",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type.textarea"
+	},
+	"anomaly.field_type.multiple": {
+		"prefix": [
+			"ftMultiple",
+			"ft"
+		],
+		"body": [
+			"\"anomaly.field_type.multiple\" => [",
+			"    \"type\"            => \"anomaly.field_type.multiple\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
+			"    \"config\"          => [",
+			"        \"min\"            => null,",
+			"        \"max\"            => null,",
+			"        \"related\"        => null,",
+			"        \"mode\"           => \"lookup\",",
+			"        \"key_name\"       => null,",
+			"        \"title_name\"     => null,",
+			"        \"value_table\"    => null,",
+			"        \"selected_table\" => null,",
+			"        \"lookup_table\"   => null,",
+			"        \"handler\"        => \"\\Anomaly\\MultipleFieldType\\Handler\\Related@handle\"",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type.multiple"
+	}
+}
