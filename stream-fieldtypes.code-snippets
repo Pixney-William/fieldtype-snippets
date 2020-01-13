@@ -214,7 +214,7 @@
 			"        \"mode\"          => \"${1:datetime|date|time}\",",
 			"        \"date_format\"   => \"j F, Y\",",
 			"        \"year_range\"    => \"-50:+50\",",
-			"        \"time_format\"   => \"g:i A\",",
+			"        \"time_format\"   => \"${2:H:i|g:I A}\",",
 			"        \"timezone\"      => null,",
 			"        \"picker\"        => true,",
 			"        \"step\"          => 15,",
