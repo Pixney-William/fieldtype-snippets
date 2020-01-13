@@ -63,7 +63,7 @@
 			"        \"off_color\"     => \"danger\",",
 			"        \"on_text\"       => \"YES\",",
 			"        \"off_text\"      => \"NO\",",
-			"        \"mode\"          => \"checkbox\",",
+			"        \"mode\"          => \"${1:checkbox|radio|switch}\",",
 			"        \"label\"         => null,",
 			"    ]",
 			"]"
