@@ -199,5 +199,30 @@
 			"]"
 		],
 		"description": "anomaly.field_type.multiple"
+	},
+	"datetime": {
+		"scope": "php",
+		"prefix": [
+			"ftDatetime",
+			"ft"
+		],
+		"body": [
+			"\"example\" => [",
+			"    \"type\"   => \"anomaly.field_type.datetime\",",
+			"    \"config\" => [",
+			"        \"default_value\" => null,",
+			"        \"mode\"          => \"${1:datetime|date|time}\",",
+			"        \"date_format\"   => \"j F, Y\",",
+			"        \"year_range\"    => \"-50:+50\",",
+			"        \"time_format\"   => \"g:i A\",",
+			"        \"timezone\"      => null,",
+			"        \"picker\"        => true,",
+			"        \"step\"          => 15,",
+			"        \"min\"           => null,",
+			"        \"max\"           => null",
+			"    ]",
+			"]"
+		],
+		"description": "datetime"
 	}
 }
