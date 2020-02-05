@@ -170,36 +170,7 @@
 		],
 		"description": "anomaly.field_type.textarea"
 	},
-	"anomaly.field_type.multiple": {
-		"scope": "php",
-		"prefix": [
-			"ftMultiple",
-			"ft"
-		],
-		"body": [
-			"\"anomaly.field_type.multiple\" => [",
-			"    \"type\"            => \"anomaly.field_type.multiple\",",
-			"    \"warning\"         => \"\",",
-			"    \"name\"            => \"\",",
-			"    \"placeholder\"     => \"\",",
-			"    \"instructions\"    => \"\",",
-			"    \"locked\"          => false,",
-			"    \"config\"          => [",
-			"        \"min\"            => null,",
-			"        \"max\"            => null,",
-			"        \"related\"        => null,",
-			"        \"mode\"           => \"lookup\",",
-			"        \"key_name\"       => null,",
-			"        \"title_name\"     => null,",
-			"        \"value_table\"    => null,",
-			"        \"selected_table\" => null,",
-			"        \"lookup_table\"   => null,",
-			"        \"handler\"        => \"\\Anomaly\\MultipleFieldType\\Handler\\Related@handle\"",
-			"    ]",
-			"]"
-		],
-		"description": "anomaly.field_type.multiple"
-	},
+	
 	"datetime": {
 		"scope": "php",
 		"prefix": [
@@ -209,6 +180,11 @@
 		"body": [
 			"\"example\" => [",
 			"    \"type\"   => \"anomaly.field_type.datetime\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
 			"    \"config\" => [",
 			"        \"default_value\" => null,",
 			"        \"mode\"          => \"${1:datetime|date|time}\",",
@@ -224,5 +200,77 @@
 			"]"
 		],
 		"description": "datetime"
-	}
+	},
+	"multiple": {
+		"scope": "php",
+		"prefix": [
+			"ftMultiple",
+			"ft"
+		],
+		"body": [
+			"\"example\" => [",
+			"    \"type\"   => \"anomaly.field_type.multiple\",",
+			"    \"warning\"         => \"\",",
+			"    \"name\"            => \"\",",
+			"    \"placeholder\"     => \"\",",
+			"    \"instructions\"    => \"\",",
+			"    \"locked\"          => false,",
+			"    \"config\" => [",
+			"        \"min\"            => null,",
+			"        \"max\"            => null,",
+			"        \"related\"        => 'Pixney\\PresentationsModule\\Type\\TypeModel',",
+			"        \"mode\"           => \"lookup|tags\",",
+			"        \"key_name\"       => null,",
+			"        \"title_name\"     => null,",
+			"        \"value_table\"    => null,",
+			"        \"selected_table\" => null,",
+			"        \"lookup_table\"   => null,",
+			"        \"handler\"        => \"\\Anomaly\\MultipleFieldType\\Handler\\Related@handle\"",
+			"    ]",
+			"]"
+		],
+		"description": "anomaly.field_type.multiple"
+	},
+
+	"anomaly.field_type.url": {
+		"scope": "php",
+		"prefix": [
+			"ftUrl",
+			"ft"
+		],
+		"body": [
+		  "\"example\" => [",
+		  "    \"type\"   => \"anomaly.field_type.url\",",
+		  "    \"config\" => [",
+		  "        \"default_value\" => null,",
+		  "    ]",
+		  "]"
+		],
+		"description": "anomaly.field_type.url"
+	},
+
+	"anomaly.field_type.repeater": {
+		"scope": "php",
+		"prefix": [
+			"ftRepeater",
+			"ft"
+		],
+		"body": [
+		  "\"example\" => [",
+		  "    \"type\"   => \"anomaly.field_type.repeater\",",
+		  "    \"warning\"         => \"\",",
+		  "    \"name\"            => \"Link Title\",",
+		  "    \"placeholder\"     => \"\",",
+		  "    \"instructions\"    => \"\",",
+		  "    \"locked\"          => false,",
+		  "    \"config\" => [",
+		  "        \"related\"        =>repeater.link_list(The related repeater model or stream dot notation (`namespace.stream`).),",
+		  "        \"max\"            => null,",
+		  "        \"min\"            => null,",
+		  "        \"add_row\"        => \"anomaly.field_type.repeater::button.add_row\",",
+		  "    ]",
+		  "]"
+		],
+		"description": "anomaly.field_type.repeater"
+	  }
 }
